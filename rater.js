@@ -154,9 +154,9 @@
         /*
          * Bind the container to some events
          */
-        $(this.element).on("mousemove", $.proxy(this.hover, this));
+        //$(this.element).on("mousemove", $.proxy(this.hover, this));
         $(this.element).on("click", $.proxy(this.select, this));
-        $(this.element).on("mouseleave", $.proxy(this.mouseout, this));
+        //$(this.element).on("mouseleave", $.proxy(this.mouseout, this));
 
         /*
          * Set the main element as unselectable
@@ -248,7 +248,7 @@
     {
         return this.value;
     }
-
+	/*
     Rate.prototype.hover = function(ev)
     {
         var pad = parseInt($(this.element).css("padding-left").replace("px", ""));
@@ -286,7 +286,7 @@
                 });
             }
         }
-    }
+    }*/
 
     /*
      * Event for when a rating has been selected (clicked)
@@ -304,12 +304,13 @@
         }
     }
 
+	/*
     Rate.prototype.mouseout = function()
     {
         this.layers.hover_layer.css({display: 'none'});
         this.layers.select_layer.css({display: 'block'});
     }
-
+		*/
     /*
      * Takes a width (px) and returns the value it resembles
      */
